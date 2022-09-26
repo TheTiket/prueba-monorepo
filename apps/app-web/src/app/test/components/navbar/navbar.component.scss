@@ -1,10 +1,11 @@
 mat-toolbar{
     background-color: #1E201A;
+    min-height: 100px;
 }
 
 .example-spacer {
     flex: 1 1 auto;
-}
+  }
 
 .btn-logIn{
     color: white;
@@ -15,9 +16,15 @@ mat-toolbar{
 
 .btn-radius{
     border-radius: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .btn-text{
-    font-size: 21px;
+    font-size: 16px;
     margin-bottom: 0px;
+}
+
+.logo{
+    width: 200px;
 }
