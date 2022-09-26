@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/app-mobile",
         "index": "apps/app-mobile/src/index.html",
@@ -96,7 +98,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/app-mobile"],
+      "outputs": [
+        "coverage/apps/app-mobile"
+      ],
       "options": {
         "jestConfig": "apps/app-mobile/jest.config.js",
         "passWithNoTests": true
