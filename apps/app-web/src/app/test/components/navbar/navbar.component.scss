@@ -1,3 +1,11 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 0.5rem 0rem;
+}
+
 .btn-logIn{
     color: white;
     border-color: white;
@@ -24,4 +32,16 @@
 .logo{
     width: 180px;
     padding: 0.25rem 0.75rem;
+}
+
+@media (min-width: 701px) {
+    .responsive {
+      display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .desktop{
+        display: none;
+    }
 }

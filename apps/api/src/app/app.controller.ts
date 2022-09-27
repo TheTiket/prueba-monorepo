@@ -1,15 +1,13 @@
 import { Controller, Get } from '@nestjs/common';
 
-import { Message } from '@prueba-monorepo/api-interfaces';
-
 import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('hello')
+  /* @Get('hello')
   getData(): Message {
     return this.appService.getData();
-  }
+  } */
 }
