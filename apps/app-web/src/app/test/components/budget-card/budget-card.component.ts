@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'prueba-monorepo-budget-card',
@@ -6,7 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./budget-card.component.scss'],
 })
 export class BudgetCardComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit(): void {}
+  @Input() budget: any;
+  public price: string;
+
+  constructor() {
+    this.price = ''
+  }
+
+  ngOnInit(): void {
+    this.showPrice();
+  }
+
+  public showPrice(){
+    const newFormat = new Intl.NumberFormat("es-CL", { currency: "CLP", style: "currency" })
+    //const newFormat = new Intl.NumberFormat("es-AR", { currency: "ARS", style: "currency" })
+    this.price = newFormat.format(this.budget.price);
+  }
 }

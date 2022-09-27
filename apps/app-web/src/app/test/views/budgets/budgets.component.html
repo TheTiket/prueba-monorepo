@@ -9,7 +9,7 @@
   </div>
   <mat-grid-list cols="3" rowHeight="2:1">
     <mat-grid-tile *ngFor="let budget of budgets">
-      <prueba-monorepo-budget-card></prueba-monorepo-budget-card>
+      <prueba-monorepo-budget-card [budget]="budget"></prueba-monorepo-budget-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
