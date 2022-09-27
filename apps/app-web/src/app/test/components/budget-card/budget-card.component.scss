@@ -1,0 +1,54 @@
+.user-icon{
+    font-size: 30px;
+}
+
+.calendar-icon{
+    font-size: 16px;
+}
+
+.watch-icon{
+    font-size: 16px;
+}
+
+.mat-card-title{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-group{
+    display: flex;
+}
+
+.date{
+    margin-bottom: 0px;
+    margin-left: 0.25rem;
+}
+
+.hour-group{
+    display: flex;
+}
+
+.hour{
+    margin-bottom: 0px;
+}
+
+.received-time{
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.6);
+}
