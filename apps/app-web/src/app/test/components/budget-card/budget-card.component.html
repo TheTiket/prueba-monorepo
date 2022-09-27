@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+  <mat-card-title>
+    <span class="material-icons user-icon">account_circle</span>
+    <p class="name">{{budget.name}}</p> <!-- data budget name -->
+  </mat-card-title>
+  
+  <mat-card-content>
+    <p class="price">total a cobrar: {{price}}</p> <!-- data budget price-->
+    <div class="time">
+      <div class="date-group">
+        <span class="material-icons calendar-icon">calendar_today</span>
+        <p class="date">20/10/2022</p> <!-- data budget date (only date) -->
+      </div>
+      <div class="hour-group">
+        <span class="material-icons watch-icon">schedule</span>
+        <p class="hour">22:00</p> <!-- data budget date (only hours) -->
+      </div>
+    </div>
+    <p class="received-time">Recibido el 20/08/2022</p> <!-- data budget date received (only date) -->
+  </mat-card-content>
+</mat-card>
