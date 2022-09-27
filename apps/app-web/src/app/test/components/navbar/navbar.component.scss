@@ -1,12 +1,3 @@
-mat-toolbar{
-    background-color: #1E201A;
-    min-height: 100px;
-}
-
-.example-spacer {
-    flex: 1 1 auto;
-  }
-
 .btn-logIn{
     color: white;
     border-color: white;
@@ -25,6 +16,12 @@ mat-toolbar{
     margin-bottom: 0px;
 }
 
+.nav-icon{
+    color: white;
+    font-size: 32px;
+}
+
 .logo{
-    width: 200px;
+    width: 180px;
+    padding: 0.25rem 0.75rem;
 }

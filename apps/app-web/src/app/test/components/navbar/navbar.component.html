@@ -1,13 +1,29 @@
-<mat-toolbar>
+<nav class="navbar navbar-dark bg-dark justify-content-between">
   <img class="logo" src="assets/imgs/logo-white-v4 1.png">
-  <span class="example-spacer"></span>
-  <button mat-raised-button class="btn-radius">
-    <p class="btn-text">Servicios</p>
-  </button>
-  <button mat-raised-button class="btn-radius">
-    <p class="btn-text">¿Cómo funciona?</p>
-  </button>
-  <button mat-button class="btn-logIn btn-radius">
-    <p class="btn-text">iniciar sesión</p>
-  </button>
-</mat-toolbar>
+
+  <div class="buttons d-md-none">
+    <button mat-button>
+      <span class="material-icons nav-icon">login</span>
+    </button>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <span class="material-icons nav-icon">menu</span>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Servicios</button>
+      <button mat-menu-item>¿Cómo funciona?</button>
+    </mat-menu>
+  </div>
+
+  <div class="buttons d-none d-md-block">
+    <button mat-raised-button class="btn-radius">
+      <p class="btn-text">Servicios</p>
+    </button>
+    <button mat-raised-button class="btn-radius">
+      <p class="btn-text">¿Cómo funciona?</p>
+    </button>
+    <button mat-button class="btn-logIn btn-radius">
+      <p class="btn-text">iniciar sesión</p>
+    </button>
+  </div>
+
+</nav>
