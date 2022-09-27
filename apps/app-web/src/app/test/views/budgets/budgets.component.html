@@ -7,9 +7,9 @@
       <h5 class="sub-title-view">A continuación se muestran los presupuestos recibidos para llevar a cabo su solicitud.</h5>
     </div>
   </div>
-  <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile *ngFor="let budget of budgets">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 p-2" *ngFor="let budget of budgets">
       <prueba-monorepo-budget-card [budget]="budget"></prueba-monorepo-budget-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+  </div>
 </div>
