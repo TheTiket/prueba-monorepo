@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Presupuestos </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment value="onHold">
+    <ion-segment-button value="onHold">
+      <ion-label>En espera</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="accepted">
+      <ion-label>Aceptados</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="refused">
+      <ion-label>Rechazados</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-content>

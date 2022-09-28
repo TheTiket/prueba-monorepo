@@ -1,0 +1,23 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="changeTicketIcon('ticket-sharp')" tab="tickets">
+      <ion-icon [name]="ticketTab"></ion-icon>
+      <ion-label>Tickets</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="changeBudgetsIcon('receipt-sharp')" tab="budgets">
+      <ion-icon [name]="budgetsTab"></ion-icon>
+      <ion-label>Presupuestos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="changeEarningsIcon('cash-sharp')" tab="earnings">
+      <ion-icon [name]="earningsTab"></ion-icon>
+      <ion-label>Ganancias</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="changeProfileIcon('person-sharp')" tab="profile">
+      <ion-icon [name]="profileTab"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
