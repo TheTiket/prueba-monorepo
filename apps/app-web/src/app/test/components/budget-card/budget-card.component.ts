@@ -11,7 +11,7 @@ export class BudgetCardComponent implements OnInit {
   public price: string;
 
   constructor() {
-    this.price = ''
+    this.price = '';
   }
 
   ngOnInit(): void {
@@ -20,7 +20,6 @@ export class BudgetCardComponent implements OnInit {
 
   public showPrice(){
     const newFormat = new Intl.NumberFormat("es-CL", { currency: "CLP", style: "currency" })
-    //const newFormat = new Intl.NumberFormat("es-AR", { currency: "ARS", style: "currency" })
     this.price = newFormat.format(this.budget.price);
   }
 }
