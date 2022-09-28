@@ -8,30 +8,35 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'tickets',
         loadChildren: () =>
-          import('../tab1/tab1.module').then((m) => m.Tab1PageModule),
+          import('../tickets/tickets.module').then((m) => m.TicketsPageModule),
       },
       {
-        path: 'tab2',
+        path: 'budgets',
         loadChildren: () =>
-          import('../tab2/tab2.module').then((m) => m.Tab2PageModule),
+          import('../budgets/budgets.module').then((m) => m.BudgetsPageModule),
       },
       {
-        path: 'tab3',
+        path: 'earnings',
         loadChildren: () =>
-          import('../tab3/tab3.module').then((m) => m.Tab3PageModule),
+          import('../earnings/earnings.module').then((m) => m.EarningsPageModule),
+      },
+      {
+        path: 'profile',
+        loadChildren: () =>
+          import('../profile/profile.module').then((m) => m.ProfilePageModule),
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/budgets',
         pathMatch: 'full',
       },
     ],
   },
   {
-    path: '',
-    redirectTo: '/tabs/tab1',
+    path: '**',
+    redirectTo: '/tabs/budgets',
     pathMatch: 'full',
   },
 ];
