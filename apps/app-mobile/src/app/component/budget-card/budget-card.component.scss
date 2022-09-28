@@ -1,0 +1,31 @@
+ion-col{
+    display: flex;
+    align-items: center;
+    padding: 0px
+}
+ion-icon{
+    padding-bottom: 0.15rem;
+    margin-right: 0.25rem;
+}
+ion-item{
+    border-style: none;
+}
+.date{
+    margin-bottom: 0px;
+}
+.address{
+    margin-bottom: 0px;
+}
+.category{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0px;
+}
+.distance{
+    margin-bottom: 0px;
+}
+.badge{
+    --background: #111;
+    border-radius: 10px;
+    padding: 0.25rem 0.75rem;
+}
