@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-segment value="onHold">
+  <ion-segment  (ionChange)="segmentChange($event)" value="onHold">
     <ion-segment-button value="onHold">
       <ion-label>En espera</ion-label>
     </ion-segment-button>
@@ -16,4 +16,10 @@
       <ion-label>Rechazados</ion-label>
     </ion-segment-button>
   </ion-segment>
+
+  <ion-col *ngIf="segmentSelected === 'onHold'" size="12" class="ion-padding">
+      <div *ngFor="let budget of budgets ">
+        <prueba-monorepo-budget-card [budget]="budget"></prueba-monorepo-budget-card>
+      </div>
+  </ion-col>
 </ion-content>
