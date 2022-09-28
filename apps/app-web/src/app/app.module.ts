@@ -10,9 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    HttpClientModule, 
+    HttpClientModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
