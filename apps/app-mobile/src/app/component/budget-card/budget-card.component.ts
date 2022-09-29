@@ -10,12 +10,19 @@ import * as moment from 'moment';
 export class BudgetCardComponent implements OnInit {
   @Input() budget! :Budget
   public date: string;
+  public price: string;
   constructor() {
     this.date = '';
+    this.price = '';
   }
 
   ngOnInit(): void {
     this.showDate();
+    this.showPrice();
+  }
+  public showPrice(){
+    const newFormat = new Intl.NumberFormat("es-CL", { currency: "CLP", style: "currency" })
+    this.price = newFormat.format(this.budget.price);
   }
   public showDate(){
     this.date = moment(this.budget.date).subtract(10, 'days').calendar();

@@ -21,11 +21,33 @@ ion-item{
     justify-content: end;
     margin-bottom: 0px;
 }
-.distance{
-    margin-bottom: 0px;
-}
-.badge{
+.badge-category{
     --background: #111;
     border-radius: 10px;
     padding: 0.25rem 0.75rem;
+}
+.distance{
+    margin-bottom: 0px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 5px
+}
+.badge-price{
+    --background: #808987;
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+
+}
+
+ion-card{
+    background-color: #FAFAFA;
+}
+
+ion-card:not([class*=mat-elevation-z]){
+    box-shadow:
+    0px 1px 5px 0px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 12%);
 }
