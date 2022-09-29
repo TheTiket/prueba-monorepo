@@ -1,16 +1,14 @@
 <prueba-monorepo-navbar></prueba-monorepo-navbar>
 
-<div class="container-flex">
-  <div>
-    <div class="text-center">
-      <h3 class="title-view">Presupuestos recibidos</h3>
-      <h5 class="sub-title-view">A continuación se muestran los presupuestos recibidos para llevar a cabo su solicitud.</h5>
-    </div>
-  </div>
-  <div class="cards-flex">
-    <div class="d-flex" *ngFor="let budget of budgets">
+<div class="text-center">
+  <h3 class="title-view">Presupuestos recibidos</h3>
+  <h5 class="sub-title-view">A continuación se muestran los presupuestos recibidos para llevar a cabo su solicitud.</h5>
+</div>
+
+<div class="mdc-layout-grid max-width">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4" *ngFor="let budget of budgets">
       <prueba-monorepo-budget-card [budget]="budget"></prueba-monorepo-budget-card>
     </div>
   </div>
-
 </div>
