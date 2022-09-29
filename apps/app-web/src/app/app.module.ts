@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent, BudgetCardComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
