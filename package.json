@@ -24,6 +24,7 @@
     "@angular/router": "~13.3.0",
     "@capacitor/core": "^3.2.5",
     "@ionic/angular": "^5.8.3",
+    "@material/layout-grid": "^14.0.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^8.0.0",
