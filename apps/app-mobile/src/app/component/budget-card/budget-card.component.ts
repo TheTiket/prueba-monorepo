@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Budget } from '@prueba-monorepo/models';
+import * as moment from 'moment';
 
 @Component({
   selector: 'prueba-monorepo-budget-card',
@@ -8,7 +9,15 @@ import { Budget } from '@prueba-monorepo/models';
 })
 export class BudgetCardComponent implements OnInit {
   @Input() budget! :Budget
-  constructor() {}
+  public date: string;
+  constructor() {
+    this.date = '';
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showDate();
+  }
+  public showDate(){
+    this.date = moment(this.budget.date).subtract(10, 'days').calendar();
+  }
 }
