@@ -6,6 +6,7 @@
     "app-mobile-e2e": "apps/app-mobile-e2e",
     "app-web": "apps/app-web",
     "app-web-e2e": "apps/app-web-e2e",
+    "budget": "libs/budget",
     "models": "libs/models",
     "services": "libs/services"
   }
