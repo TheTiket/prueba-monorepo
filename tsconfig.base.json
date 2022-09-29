@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@prueba-monorepo/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@prueba-monorepo/budget": ["libs/budget/src/index.ts"],
       "@prueba-monorepo/models": ["libs/models/src/index.ts"],
       "@prueba-monorepo/services": ["libs/services/src/index.ts"]
     }

@@ -1,4 +1,6 @@
-export class CreateBudgetDto {
+import { Budget } from "@prueba-monorepo/models";
+
+export class CreateBudgetDto implements Budget {
 
 
   readonly category: string;
@@ -13,6 +15,6 @@ export class CreateBudgetDto {
   readonly address: string;
 
 
-  readonly price: string;
+  readonly price: number;
 
 }
