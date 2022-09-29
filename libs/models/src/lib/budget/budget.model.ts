@@ -1,7 +1,7 @@
 export interface Budget {
     category: string;
     distance: string;
-    date: string;
+    date: Date;
     address: string;
     price: number;
 }

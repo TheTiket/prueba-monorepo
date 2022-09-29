@@ -13,7 +13,7 @@ export class Budget {
   distance: string;
 
   @Prop({ required: true })
-  date: string;
+  date: Date;
 
   @Prop({ required: true })
   address: string;
